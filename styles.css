@@ -100,3 +100,20 @@ footer { border-top:1px solid rgba(143,166,179,.18); min-height:90px; display:fl
   .download-card { flex-direction:column; align-items:stretch; }
   .download-action { min-width:0; }
 }
+
+@media (max-width: 560px) {
+  .section-wrap,
+  .topbar { width: min(100% - 28px, 1180px); }
+  .hero { padding-top: 48px; }
+  h1 {
+    font-size: clamp(42px, 13vw, 58px);
+    line-height: 1;
+    letter-spacing: .025em;
+    text-align: center;
+    width: 100%;
+    overflow-wrap: normal;
+    white-space: nowrap;
+  }
+  .tagline { font-size: 24px; }
+  .intro { font-size: 15px; }
+}
