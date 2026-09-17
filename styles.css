@@ -70,10 +70,9 @@ h1 span { color: var(--red); }
 .intro { max-width: 760px; margin: 22px auto 0; color: var(--muted); font-size: 17px; }
 .plugin-shot {
   margin-top: 34px;
-  border: 1px solid #233945;
-  padding: 10px;
-  background: #071117;
-  box-shadow: 0 28px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.02) inset;
+  padding: 0;
+  background: transparent;
+  box-shadow: 0 28px 80px rgba(0,0,0,.32);
   position: relative;
   z-index: 2;
 }
@@ -133,6 +132,6 @@ footer { border-top:1px solid rgba(143,166,179,.18); min-height:90px; display:fl
   }
   .tagline { font-size: 23px; }
   .intro { font-size: 15px; margin-top: 16px; }
-  .plugin-shot { margin-top: 24px; padding: 6px; }
+  .plugin-shot { margin-top: 24px; padding: 0; }
   .actions { margin-top: 22px; }
 }
