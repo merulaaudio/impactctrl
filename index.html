@@ -1,3 +1,7 @@
+---
+---
+{% capture impactctrl_image %}{% include_relative assets/img-0.txt %}{% include_relative assets/img-1.txt %}{% include_relative assets/img-2.txt %}{% include_relative assets/img-3.txt %}{% include_relative assets/img-4.txt %}{% endcapture %}
+{% capture merula_logo %}{% include_relative assets/logo-0.txt %}{% include_relative assets/logo-1.txt %}{% endcapture %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,15 +14,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <script src="image-loader.js" defer></script>
 </head>
 <body>
   <div class="noise"></div>
 
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Merula Audio">
-      <span class="mark">M</span>
-      <span class="brand-text"><strong>MERULA</strong><small>AUDIO</small></span>
+      <img src="data:image/png;base64,{{ merula_logo | strip_newlines | strip }}" alt="Merula Audio" style="display:block;width:166px;height:49px;object-fit:contain;object-position:left center;" />
     </a>
     <nav>
       <a href="#features">Features</a>
@@ -41,7 +43,7 @@
       </div>
 
       <div class="plugin-shot">
-        <img id="plugin-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="IMPACTCTRL 1.0.0 plugin interface" />
+        <img src="data:image/webp;base64,{{ impactctrl_image | strip_newlines | strip }}" alt="IMPACTCTRL 1.0.0 plugin interface" width="1275" height="639" />
       </div>
     </section>
 
@@ -98,7 +100,7 @@
           </div>
         </div>
         <div class="download-action">
-          <a class="button primary big" href="https://github.com/merulaaudio/impactctrl/releases/latest/download/IMPACTCTRL-1.0.0-Windows-VST3.zip">Download VST3</a>
+          <a class="button primary big" href="https://github.com/user-attachments/files/32338596/IMPACTCTRL-1.0.0-Windows-VST3.zip">Download VST3</a>
           <small>Version 1.0.0</small>
         </div>
       </div>
